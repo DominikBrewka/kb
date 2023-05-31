@@ -1,0 +1,47 @@
+@use 'color';
+@use 'font';
+
+body {
+	// to może być niepotrzebne przez reset.css
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	// czcionka
+	font: 130% font.$fonts;
+	font-weight: 300;
+	
+	// kolory
+	color: color.$fg1;
+	background-color: color.$bg;
+
+	// tło
+	.bg {
+		/* IDEA zmiana koloru tła zależnie od podstrony
+			filter: hue-rotate(90deg);
+		*/
+
+		background: url("img/bg-grad.png");
+		background-size: 1920px 2500px;
+
+		// bez blura na niektórych monitorach
+		// pojawia się banding
+		filter: blur(2vw);
+		opacity: 0.75;
+
+		// ustawienie na środku
+		position: fixed;
+		background-position: top center;
+		z-index: -1;  
+
+		// robi to samo co left right top bottom
+		// tylko w jednej linijce
+		inset: 0;
+	}
+	
+	// białe linki
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
