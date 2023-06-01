@@ -16,6 +16,7 @@ npm install
 ```
 2. Żeby włączyć stronę
 ```
-npm run dev
+npm run build
+npm run preview
 ``` 
-3. Gotowe! Wszelkie zmiany kodu będą automatycznie odświeżane, a strona dostępna jest pod adresem `localhost:3000`.
+3. Gotowe! Wszelkie zmiany kodu będą automatycznie odświeżane, a strona dostępna jest pod adresem `localhost:4173`.
