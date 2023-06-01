@@ -4,7 +4,7 @@ Dostępny na https://dbrewka.pl/kb/
 
 ## Hostowanie prywatne 
 ### Wymagania:
- - Node
+ - Node (minimum 20.0)
  - NPM
 
 ### Instalacja
