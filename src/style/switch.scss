@@ -1,0 +1,59 @@
+// nie zdążyłem zrobić, miał to być switch który można "rozmontować"
+// i popatrzeć na każdą część
+// nie byłem w stanie tylko ogarnąć w jaki sposób dostać dostęp
+// z dziecka do rodzica (inaczej niż @at-root bo potrzebowałem w :hover)
+.switch {
+    background-color: #000000;
+    width: 26rem;
+    height: 44rem;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    .part {
+        height: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .part-selector {
+        position: absolute;
+        transform: scale(1);
+    }
+    .part-selector:nth-child(1) {
+        top: 0;
+        height: 12rem;
+        width: 26rem;
+    }
+    .part-selector:nth-child(2) {
+        top: 12rem;
+        height: 12rem;
+        width: 26rem;
+    }
+    .part-selector:nth-child(3) {
+        top: 24rem;
+        left: 0;
+        height: 5rem;
+        width: 14.5rem;
+    }
+    .part-selector:nth-child(4) {
+        top: 24rem;
+        left: 14.5rem;
+        height: 10rem;
+        width: 8rem;
+    }
+    .part-selector:nth-child(5) {
+        top: 29rem;
+        left: 0;
+        height: 14rem;
+        width: 26rem;
+    }
+}

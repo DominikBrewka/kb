@@ -5,10 +5,6 @@
         * Działanie
         * Dlaczego warto
 
-    - Budowa
-        * Podział klawiatury
-        * Model switcha
-
     - Rodzaje
         * Rozmiary (Full-size, TKL, %, egzotyczne)
         * Standardowe layouty (ISO, ANSI)
@@ -22,7 +18,6 @@
         * Keycapy
             > ABS
             > PBT
-            > Własne namalowane (nie polecam)
         * PCB
             > Hotswap
             > Lutowanie

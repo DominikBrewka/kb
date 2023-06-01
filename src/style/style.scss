@@ -5,6 +5,7 @@
 @use 'symbols';
 @use 'headers';
 @use 'scrollbar';
+@use 'switch';
 
 // wiem że może nie jest jakoś bardzo uporządkowane
 // ale jest to jednak całkiem czytelne
@@ -34,6 +35,7 @@
 }
 
 .main-nav {
+	height: 3rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -44,6 +46,7 @@
 	// wszystko bezpośrednio w .main-nav
 	&> * {
 		transition: all .25s ease;
+		height: 2.5rem;
 	}
 
 	.menu-right, .menu-left {
@@ -63,16 +66,19 @@
 		}
 	}
 	
+	
 	.menu-center {
 		display: flex;
 		justify-content: center;
 		text-align: center;
 		flex-direction: row;
 
+
 		// nie wiem czemu działa ale działa
 		gap: min(3vw, 4rem);
 		
 		li {
+			height: 2.5rem;
 			min-width: min(15vw, 20rem);
 			font-style: italic;
 			text-transform: uppercase;
@@ -81,9 +87,11 @@
 			
 			hr {
 				border: solid color.$white-trans 2px;
-				width: 100%;
+				width: 50%;
 				transition: all 0.25s ease;
 				border-radius: 1rem;
+
+				margin-top: 0.65rem;
 			}
 			
 			&:hover {
@@ -177,11 +185,16 @@
 
 		p {
 			padding-left: 1.25rem;
-			padding-block: .5rem;
+			margin-top: .5rem;
+			margin-bottom: 1rem;
+		}
+
+		i {
+			font-style: italic;
 		}
 
 		// formatowanie linków tylko w tekście
-		p>a, span>a {
+		p a, span a {
 			color: color.$fg;
 			text-decoration: underline dotted;
 			text-decoration-color: transparent;
@@ -359,8 +372,15 @@
 			flex-direction: column;
 		}
 
+		height: auto;
+		& > * {
+			height: auto;
+		}
+		li {
+			height: auto;
+		}
 	}
-	
+
 	.main-content {
 		margin: 0 !important;
 	}
@@ -379,6 +399,16 @@
 	.image.cover {
 		img {
 			width: 80vw;
+		}
+	}
+
+	.main-nav {
+		height: auto;
+		& > * {
+			height: auto;
+		}
+		li {
+			height: auto;
 		}
 	}
 	
