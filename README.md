@@ -19,4 +19,4 @@ npm install
 npm run build
 npm run preview
 ``` 
-3. Gotowe! Wszelkie zmiany kodu będą automatycznie odświeżane, a strona dostępna jest pod adresem `localhost:4173`.
+3. Gotowe! Strona dostępna jest pod adresem `localhost:4173`.
